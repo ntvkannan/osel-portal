@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Template</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <!-- Page title -->
+            <header class="page-title-header">
+                <div class="page-title-header__left">
+                    <div class="title-lg">New Template 1</div>
+                    <div class="inline-items breadcrm">
+                        <a href="dashboard.html" class="inline-items__item">Home</a>
+                        <a href="layout.html" class="inline-items__item">Layouts</a>
+                        <a href="layout-template.html" class="inline-items__item">Manage Templates</a>
+                        <span class="inline-items__item">Template design</span>
+                    </div>
+                </div>
+                <div class="page-title-header__right">
+                    <div class="inline-items no-separator">
+                        <div class="inline-items__item"><a class="btn btn-primary" href="#" id="test">Save</a></div>
+                        <!-- <div class="inline-items__item"><a class="btn btn-primary" href="layout-template.html">Save</a></div> -->
+                    </div>
+                </div>
+            </header>
+
+            <!-- Design playground -->
+            <div class="design-wr">
+                <!-- Design box - center -->
+                <div class="design-box">
+                    <!-- Header -->
+                    <div class="tool-header">
+                        <!-- Left side of Header -->
+                        <div class="tool-header__left">
+                            <span
+                                class="material-symbols-outlined toggle-btn fn-toggle-left-btn">responsive_layout</span>
+                        </div>
+                        <!-- Center side of Header -->
+                        <div class="tool-header__center">
+                            <div class="inline-items">
+                                <div class="inline-items__item"><b>Container</b>: 1280 x 720</div>
+                                <div class="inline-items__item"><b>Ratio</b>: 16:9</div>
+                                <div class="inline-items__item"><b># of Region</b>: 1</div>
+                            </div>
+                        </div>
+                        <!-- Right side of Header -->
+                        <div class="tool-header__right">
+                            <span
+                                class="material-symbols-outlined toggle-btn fn-toggle-right-btn">design_services</span>
+                        </div>
+                    </div>
+
+                    <!-- Design Body -->
+                    <div class="design-body">
+                        <!-- Design Body Header-->
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="title fw-bold">Untitle Region</div>
+                            <div>
+                                <span class="badge text-bg-lightdark">1280 x 520</span>
+                                <span class="badge text-bg-lightdark">16:9 ratio</span>
+                            </div>
+                        </div>
+
+                        <!-- Design Body Container-->
+                        <div class="design-container out" id="capture-area">
+                            <div class="design-container in">
+                                <div class="row row-cols-1">
+                                    <div class="col">
+                                        <!-- Region Container-->
+                                        <div class="region-box selected" data-name="Untitle Region">
+                                            <div class="region-box__padding"></div>
+                                        </div>
+
+                                        <!-- Region Container-->
+                                        <div class="region-box" data-name="Region 1">
+                                            <div class="region-box__padding"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Test -->
+                        <img id="screenshot" alt="Screenshot will appear here" style="margin-top: 10px;"
+                            src="/assets/images/template.png" />
+
+
+                    </div>
+                </div>
+
+                <!-- Tool box - left side tool -->
+                <div class="tool-box left fn-left-tool-box">
+                    <div class="tool-header">
+                        <div class="text-uppercase small fw-bold">Region</div>
+                        <button class="btn btn-sm btn-tertiary fn-add-region-btn">Add</button>
+                    </div>
+                    <ul class="layers-list">
+                        <!-- Region -->
+                        <li class="active">
+                            <div class="layers-list__name">Untitle Region</div>
+                            <div class="dropdown">
+                                <div data-bs-toggle="dropdown">
+                                    <div class="icon-box icon-box-xs" id="test">
+                                        <span class="material-symbols-outlined">more_vert</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-xs dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#editRegionName">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">edit</span></div>
+                                                <div class="icon-txt">Edit</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteRegion">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">delete</span></div>
+                                                <div class="icon-txt">Delete</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- Region -->
+                        <li>
+                            <div class="layers-list__name">Region 1</div>
+                            <div class="dropdown">
+                                <div data-bs-toggle="dropdown">
+                                    <div class="icon-box icon-box-xs" id="test">
+                                        <span class="material-symbols-outlined">more_vert</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-xs dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#editRegionName">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">edit</span></div>
+                                                <div class="icon-txt">Edit</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteRegion">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">delete</span></div>
+                                                <div class="icon-txt">Delete</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Inner popup for Tool box - to add new region -->
+                <div class="tool-box left-inner fn-inner-left-tool-box">
+                    <div class="tool-header">
+                        <div class="text-uppercase small fw-bold">Select</div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-tertiary fn-close-region-btn">Insert</button>
+                            <div class="icon-box icon-box-xs fn-close-region-btn"><span
+                                    class="material-symbols-outlined">close</span></div>
+                        </div>
+                    </div>
+                    <div class="tool-body">
+                        <!-- Dimention Inputs -->
+                        <div class="tool-section region-btns-section">
+
+                            <!-- 1 Region -->
+                            <div class="region-btns">
+                                <div class="title-xs caps"><span class="no">1</span> region</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2 Regions -->
+                            <div class="region-btns">
+                                <div class="title-xs caps"><span class="no">2</span> regions</div>
+                                <div class="row row-cols-1 gap-1">
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td width="20%"></td>
+                                                    <td width="80%"></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td width="80%"></td>
+                                                    <td width="20%"></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3 Regions -->
+                            <div class="region-btns">
+                                <div class="title-xs caps"><span class="no">3</span> regions</div>
+                                <div class="row row-cols-1 gap-1">
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered border-dark rounded">
+                                                <tr>
+                                                    <td width="25%"></td>
+                                                    <td width="50%"></td>
+                                                    <td width="25%"></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered border-dark rounded">
+                                                <tr>
+                                                    <td width="20%"></td>
+                                                    <td width="20%"></td>
+                                                    <td width="60%"></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered border-dark rounded">
+                                                <tr>
+                                                    <td width="60%"></td>
+                                                    <td width="20%"></td>
+                                                    <td width="20%"></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4 Regions -->
+                            <div class="region-btns">
+                                <div class="title-xs caps"><span class="no">4</span> regions</div>
+                                <div class="row row-cols-1 gap-1">
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered border-dark rounded full-height">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="region-btn" href="#">
+                                            <table class="table table-bordered border-dark rounded ">
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool box - right right -->
+                <div class="tool-box right fn-right-tool-box">
+                    <div class="tool-header">
+                        <div class="text-uppercase small fw-bold">Style</div>
+                        <button class="btn btn-sm btn-tertiary">Apply</button>
+                    </div>
+
+                    <div class="tool-body">
+                        <!-- Dimention Inputs -->
+                        <div class="tool-section">
+                            <div class="title-xs caps">Dimention</div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <label class="form-label">W</label>
+                                    <input type="text" class="form-control" value="1280">
+                                </div>
+                                <div class="tool-input">
+                                    <label class="form-label">H</label>
+                                    <input type="text" class="form-control" value="720">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Margin Inputs -->
+                        <div class="tool-section">
+                            <div class="title-xs caps">Margin</div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <label class="form-label">T</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                                <div class="tool-input">
+                                    <label class="form-label">R</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                            </div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <label class="form-label">B</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                                <div class="tool-input">
+                                    <label class="form-label">L</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Padding Inputs -->
+                        <div class="tool-section">
+                            <div class="title-xs caps">Padding</div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <label class="form-label">T</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                                <div class="tool-input">
+                                    <label class="form-label">R</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                            </div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <label class="form-label">B</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                                <div class="tool-input">
+                                    <label class="form-label">L</label>
+                                    <input type="text" class="form-control" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Alignment Inputs -->
+                        <div class="tool-section">
+                            <div class="title-xs caps">Align Region</div>
+                            <div class="tool-row">
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined">align_flex_start</span>
+                                    </div>
+                                </div>
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined">align_flex_center</span>
+                                    </div>
+                                </div>
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined">align_flex_end</span>
+                                    </div>
+                                </div>
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined"
+                                            style="rotate: 270deg;">align_flex_start</span>
+                                    </div>
+                                </div>
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined"
+                                            style="rotate: 90deg;">align_flex_center</span>
+                                    </div>
+                                </div>
+                                <div class="tool-input">
+                                    <div class="icon-box icon-box-xs">
+                                        <span class="material-symbols-outlined"
+                                            style="rotate: 270deg;">align_flex_end</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal - Edit Region name -->
+    <div class="modal fade" id="editRegionName" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Edit Region</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Untitle Region</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Region Name<span class="required">*</span></label>
+                            <input type="text" class="form-control" value="Untitle Region"
+                                placeholder="Enter group name">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Delete Region -->
+    <div class="modal fade" id="deleteRegion" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Delete Region</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Untitle Region</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to delete this region?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom Scripts returned by us -->
+    <script>
+
+        document.getElementById("test").addEventListener("click", function () {
+            html2canvas(document.getElementById("capture-area")).then(function (canvas) {
+                // Convert the canvas to a data URL and display the image
+                document.getElementById("screenshot").src = canvas.toDataURL();
+            });
+        });
+
+
+        $(document).ready(function () {
+
+            // Toggle Region Tool box
+            $('.fn-toggle-left-btn').click(function () {
+                toggleLeftTool();
+            });
+
+            // Toggle Style Tool box
+            $('.fn-toggle-right-btn').click(function () {
+                toggleRightTool();
+            })
+
+            // Add Region 
+            $('.fn-add-region-btn').click(function () {
+                showRegionPopup();
+            });
+
+            // Insert Region
+            $('.fn-insert-region-btn').click(function () {
+                hideRegionPopup();
+            })
+
+            // CLose Region
+            $('.fn-close-region-btn').click(function () {
+                hideRegionPopup();
+            })
+
+            // Selected Region
+            $('.region-btn').click(function (e) {
+                e.preventDefault();
+                $('.region-btn').removeClass('selected');
+                $(this).addClass('selected');
+            })
+        });
+
+        ///// Toggle Region Tool
+        function toggleLeftTool() {
+            $('.fn-left-tool-box').toggleClass('show');
+        }
+
+        ///// Toggle Style Tool
+        function toggleRightTool() {
+            $('.fn-right-tool-box').toggleClass('show');
+        }
+
+        ///// Add Region
+        function showRegionPopup() {
+            $('.fn-inner-left-tool-box').addClass('show')
+        }
+
+        ///// Add Region
+        function hideRegionPopup() {
+            $('.fn-inner-left-tool-box').removeClass('show')
+        }
+
+    </script>
+
+</body>
+
+</html>

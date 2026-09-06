@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Display view</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <!-- Page title -->
+            <header class="page-title-header">
+                <div class="page-title-header__left">
+                    <div class="title-lg">Display 1</div>
+                    <div class="inline-items breadcrm">
+                        <a href="dashboard.html" class="inline-items__item">Home</a>
+                        <a href="display.html" class="inline-items__item">Display</a>
+                        <span class="inline-items__item">Display 1</span>
+                    </div>
+                </div>
+                <div class="page-title-header__right">
+                    <div class="inline-items">
+                        <div class="inline-items__item"><span class="badge text-bg-success">Authorise</span></div>
+                        <div class="inline-items__item"><span class="badge text-bg-danger">Offline</span></div>
+                        <div class="inline-items__item">
+                            <div class="title-xs caps light">Last Response on</div>
+                            <div class="title-xs">10 Jun, 2024 02:25 pm</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Section - Display info header -->
+            <div class="section-container">
+                <!-- Display view header info box-->
+                <div class="info-box m-0">
+                    <div class="row">
+                        <!-- Display summary info col -->
+                        <div class="col-md-12 col-lg-8 col-xl-7">
+                            <div class="info-box__info-set mb-2">
+                                <div class="info-box__graphic">
+                                    <img src="./assets/images/default-image.png" alt="Display" />
+                                </div>
+                                <ul class="info-list label-wdth-100">
+                                    <li>
+                                        <span>Display Name</span>
+                                        <span>: Display 1</span>
+                                    </li>
+                                    <li>
+                                        <span>Group Name</span>
+                                        <span class="d-flex">
+                                            <span>: Group 1</span>
+                                            <a class="icon-box icon-box-xs link ms-2" data-bs-toggle="offcanvas"
+                                                data-bs-target="#changeGroup">
+                                                <span class="material-symbols-outlined">edit</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Resolution</span>
+                                        <span>: 1024 x 552 px (Landscape)</span>
+                                    </li>
+                                    <li>
+                                        <span>Code</span>
+                                        <span>: 0123456789</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Storage and Ram Info col -->
+                        <div class="col-md-12 col-lg-4 col-xl-5">
+                            <div class="row row-cols-lg-1 row-cols-xl-2">
+                                <!-- Storage Info col -->
+                                <div class="col">
+                                    <div class="info-box white-bg mb-2">
+                                        <div class="info-box__info-set center">
+                                            <div class="info-box__graphic">
+                                                <div class="circle circle-75 storage func-storage">
+                                                    <div class="circle__inner">
+                                                        <div class="circle__percentage"> <span
+                                                                class="percentage_num">75%</span> <span
+                                                                class="small">used </span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="title-xs caps light mb-2">Storage</div>
+                                                <ul class="info-list">
+                                                    <li>
+                                                        <span>Total</span>
+                                                        <span>: <b>12.02</b> GB</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used</span>
+                                                        <span>: <b>7.85</b> GB</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ram Info col -->
+                                <div class="col">
+                                    <div class="info-box white-bg">
+                                        <div class="info-box__info-set center">
+                                            <div class="info-box__graphic">
+                                                <div class="circle circle-75 storage func-ram">
+                                                    <div class="circle__inner">
+                                                        <div class="circle__percentage"> <span
+                                                                class="percentage_num">75%</span> <span
+                                                                class="small">used </span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="title-xs caps light mb-2">Ram</div>
+                                                <ul class="info-list">
+                                                    <li>
+                                                        <span>Total</span>
+                                                        <span>: <b>752.66</b> MB</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used</span>
+                                                        <span>: <b>752</b> KB</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section - Tabs action -->
+            <section class="section-container">
+                <!-- Tabs -->
+                <ul class="nav nav-underline nav-fill" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#schedule-tab-pane">Schedule</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab"
+                            data-bs-target="#configuration-tab-pane">Configuration</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab"
+                            data-bs-target="#additionalInfo-tab-pane">Additional Info</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab"
+                            data-bs-target="#settings-tab-pane">Settings</button>
+                    </li>
+                </ul>
+                <!-- Tab Content -->
+                <div class="tab-content">
+
+                    <!-- Schedule tab pane -->
+                    <div class="tab-pane fade show active" id="schedule-tab-pane" tabindex="0">
+                        <!-- Tap title-->
+                        <div class="title-md">Assigned Schedule<span class="light">(2)</span></div>
+
+                        <!-- Tap Info content-->
+                        <div class="row row-cols-1 row-cols-xl-2">
+                            <!-- Schedule Info box-->
+                            <div class="col">
+                                <div class="info-box">
+                                    <div class="info-box__info-set">
+                                        <div class="info-box__graphic">
+                                            <img src="./assets/images/default-image.png" alt="Display" />
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <button class="btn btn-tertiary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#previewSchedule">Preview</button>
+                                                <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#deleteSchedule">Remove</button>
+                                            </div>
+                                        </div>
+                                        <ul class="info-list label-wdth-100">
+                                            <li>
+                                                <span>Name</span>
+                                                <span>: Schedule 1</span>
+                                            </li>
+                                            <li>
+                                                <span>Is emergency?</span>
+                                                <span>: No</span>
+                                            </li>
+                                            <li>
+                                                <span>From</span>
+                                                <span>: 28 May, 2024 02:31 pm</span>
+                                            </li>
+                                            <li>
+                                                <span>To</span>
+                                                <span>: 30 May, 2024 02:31 pm</span>
+                                            </li>
+                                            <li>
+                                                <span>Layout</span>
+                                                <span>: Lanscape 3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Schedule Info box-->
+                            <div class="col">
+                                <div class="info-box">
+                                    <div class="info-box__info-set">
+                                        <div class="info-box__graphic">
+                                            <img src="./assets/images/default-image.png" alt="Display" />
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <button class="btn btn-tertiary btn-sm">Preview</button>
+                                                <button class="btn btn-outline-danger btn-sm">Remove</button>
+                                            </div>
+                                        </div>
+                                        <ul class="info-list label-wdth-100">
+                                            <li>
+                                                <span>Name</span>
+                                                <span>: Schedule 1</span>
+                                            </li>
+                                            <li>
+                                                <span>Is emergency?</span>
+                                                <span>: No</span>
+                                            </li>
+                                            <li>
+                                                <span>From</span>
+                                                <span>: 28 May, 2024 02:31 pm</span>
+                                            </li>
+                                            <li>
+                                                <span>To</span>
+                                                <span>: 30 May, 2024 02:31 pm</span>
+                                            </li>
+                                            <li>
+                                                <span>Layout</span>
+                                                <span>: Lanscape 3</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Configuration tab pane -->
+                    <div class="tab-pane fade" id="configuration-tab-pane" tabindex="0">
+                        <!-- Tap title-->
+                        <div class="title-md">Configuration</div>
+
+                        <!-- <div class="row">
+                            <div class="col-lg-4 mb-3">
+                                <div class="info-box equal-height">
+                                    First
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div class="info-box equal-height">
+                                    Second
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div class="info-box equal-height">
+                                    <div class="info-box__graphic">
+                                        <img src="./assets/images/default-image.png" alt="Display" />
+                                        <button class="btn btn-tertiary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#changeImage">Change Default Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                        </div> -->
+
+                        <!-- Tap Info content-->
+                        <div class="row row-cols-1 row-cols-xl-2">
+                            <!-- General Settings-->
+                            <div class="col">
+                                <div class="info-box equal-height">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">General Settings</div>
+                                        <button class="btn btn-tertiary" data-bs-toggle="modal"
+                                            data-bs-target="#editGeneralSettings">Edit</button>
+                                    </div>
+                                    <!-- info box content -->
+                                    <div class="info-box__body">
+                                        <ul class="info-list label-wdth-150">
+                                            <li>
+                                                <span>Display name</span>
+                                                <span>: Display 1</span>
+                                            </li>
+                                            <li>
+                                                <span>Connectivity Mode</span>
+                                                <span>: Online</span>
+                                            </li>
+                                            <li>
+                                                <span>Content play mode</span>
+                                                <span>: Online</span>
+                                            </li>
+                                            <li>
+                                                <span>Screen Orientation</span>
+                                                <span>: 180°</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player Settings-->
+                            <div class="col">
+                                <div class="info-box equal-height">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Player Settings</div>
+                                        <button class="btn btn-tertiary" data-bs-toggle="modal"
+                                            data-bs-target="#editPlayerSettings">Edit</button>
+                                    </div>
+                                    <!-- info box content -->
+                                    <div class="info-box__info-set">
+                                        <div class="info-box__graphic">
+                                            <img src="./assets/images/default-image.png" alt="Display" />
+                                            <button class="btn btn-tertiary btn-sm mt-3" data-bs-toggle="modal"
+                                                data-bs-target="#changeImage">Change Default Image</button>
+                                        </div>
+                                        <ul class="info-list label-wdth-150">
+                                            <li>
+                                                <span>Screen height</span>
+                                                <span>: 1080px</span>
+                                            </li>
+                                            <li>
+                                                <span>Screen width</span>
+                                                <span>: 1920px</span>
+                                            </li>
+                                            <li>
+                                                <span>Heartbeat interval</span>
+                                                <span>: 20</span>
+                                            </li>
+                                            <li>
+                                                <span>FOTA flag</span>
+                                                <span>: on</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Additional info tab pane -->
+                    <div class="tab-pane fade" id="additionalInfo-tab-pane" tabindex="0">
+                        <!-- Tap title-->
+                        <div class="title-md">Additional Info</div>
+                        <!-- Tap Info content-->
+                        <div class="row row-cols-1 row-cols-xl-2">
+                            <!-- General Settings-->
+                            <div class="col">
+                                <div class="info-box">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Technical Info</div>
+                                    </div>
+                                    <!-- info box content -->
+                                    <div class="info-box__body">
+                                        <ul class="info-list label-wdth-150">
+                                            <li>
+                                                <span>IP Address</span>
+                                                <span>: 10.10.0.117</span>
+                                            </li>
+                                            <li>
+                                                <span>Operating System</span>
+                                                <span>: android (25)</span>
+                                            </li>
+                                            <li>
+                                                <span>App Version</span>
+                                                <span>: 1.2</span>
+                                            </li>
+                                            <li>
+                                                <span>Firmware Version</span>
+                                                <span>: 0.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Screen Orientation</span>
+                                                <span>: 180°</span>
+                                            </li>
+                                            <li>
+                                                <span>Player Location</span>
+                                                <span>: Lat: 0.0, Long: 0.0</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Streaming Settings-->
+                            <div class="col">
+                                <div class="info-box">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Streaming Info</div>
+                                        <button class="btn btn-tertiary">Edit</button>
+                                    </div>
+                                    <!-- info box content -->
+                                    <div class="info-box__info-set">
+                                        <div class="info-box__graphic">
+                                            <img src="./assets/images/default-image.png" alt="Display">
+                                            <button class="btn btn-tertiary btn-sm mt-3" data-bs-toggle="modal"
+                                                data-bs-target="#previewStreaming">Preview</button>
+                                        </div>
+                                        <ul class="info-list label-wdth-150">
+                                            <li>
+                                                <span>Currently Streaming</span>
+                                                <span>: Schedule 3</span>
+                                            </li>
+                                            <li>
+                                                <span>Last Streaming</span>
+                                                <span>: Schedule 2</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Settings info tab pane -->
+                    <div class="tab-pane fade" id="settings-tab-pane" tabindex="0">
+                        <!-- Tap title-->
+                        <div class="title-md">Settings</div>
+                        <!-- Tap Info content-->
+                        <div class="row row-cols-1 row-cols-xl-2">
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Display Reboot</div>
+                                        <a class="btn btn-tertiary" data-bs-toggle="modal"
+                                            data-bs-target="#rebootDisplay">Reboot Display</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        This action will restart your signage application without intrupting device.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Display Auth</div>
+                                        <a class="btn btn-tertiary">De-authorize</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Ensuring only authorized players can connect and display content
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Display Key</div>
+                                        <a class="btn btn-tertiary">Display Key</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Unique identifier or key for player authentication and communication.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Display Screenshot</div>
+                                        <a class="btn btn-tertiary">Display Screenshot</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Capturing screenshots from the player's display that is been running currently.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">PDU Unit</div>
+                                        <a class="btn btn-tertiary">Register</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Power Distribution Unit managing electrical power to players and devices.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Firmware</div>
+                                        <a class="btn btn-tertiary">Update Firmware</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Update (FOTA): Remote updates of the player's firmware.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Player Clear Storage</div>
+                                        <a class="btn btn-tertiary">Clear Storate</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Clearing the downloaded files from the player's storage.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Player Clean Storage</div>
+                                        <a class="btn btn-tertiary">Clear Storage</a>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        Thorough cleaning of the player's storage.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Power Management <span
+                                                class="badge text-bg-lightdark">Not Applicable</span></div>
+                                        <div class="d-flex align-items-start">
+                                            <a class="btn btn-tertiary">Register</a>
+                                        </div>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        An intelligent function to distribute electrical power efficiently manages power
+                                        consumption, ensure energy efficiency, and enhance operational reliability.
+                                        Reduces operational costs, increases system longevity, and contributes to
+                                        sustainability by lowering consumption.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Power Management <span
+                                                class="badge text-bg-danger">Off</span></div>
+                                        <div class="d-flex align-items-start">
+                                            <a class="btn btn-tertiary">Unregister</a>
+                                            <div class="dropdown">
+                                                <div data-bs-toggle="dropdown">
+                                                    <div class="icon-box">
+                                                        <span class="material-symbols-outlined">more_vert</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="dropdown-menu dropdown-menu-sm dropdown-menu-end">
+                                                    <li>
+                                                        <div class="dropdown-item pt-2">
+                                                            <div class=" form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    role="switch" id="scheduler">
+                                                                <label class="form-check-label ms-2"
+                                                                    for="scheduler">Power Switch</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown-divider"></li>
+                                                    <li>
+                                                        <a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#powerSchedule">
+                                                            <div class="icon-txt-box">
+                                                                <div class="icon-box"><span
+                                                                        class="material-symbols-outlined">schedule</span>
+                                                                </div>
+                                                                <div class="icon-txt">Power Schedule</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        An intelligent function to distribute electrical power efficiently manages power
+                                        consumption, ensure energy efficiency, and enhance operational reliability.
+                                        Reduces operational costs, increases system longevity, and contributes to
+                                        sustainability by lowering consumption.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Settings-->
+                            <div class="col">
+                                <div class="info-box white">
+                                    <!-- info box header -->
+                                    <div class="info-box__header">
+                                        <div class="info-box__title">Power Management <span
+                                                class="badge text-bg-success">On</span></div>
+                                        <div class="d-flex align-items-start">
+                                            <a class="btn btn-tertiary">Unregister</a>
+                                            <div class="dropdown">
+                                                <div data-bs-toggle="dropdown">
+                                                    <div class="icon-box">
+                                                        <span class="material-symbols-outlined">more_vert</span>
+                                                    </div>
+                                                </div>
+                                                <ul class="dropdown-menu dropdown-menu-sm dropdown-menu-end">
+                                                    <li>
+                                                        <div class="dropdown-item pt-2">
+                                                            <div class=" form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    role="switch" id="scheduler2" checked>
+                                                                <label class="form-check-label ms-2"
+                                                                    for="scheduler2">Power Switch</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dropdown-divider"></li>
+                                                    <li>
+                                                        <a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#powerSchedule">
+                                                            <div class="icon-txt-box">
+                                                                <div class="icon-box"><span
+                                                                        class="material-symbols-outlined">schedule</span>
+                                                                </div>
+                                                                <div class="icon-txt">Power Schedule</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- info box body -->
+                                    <div class="info-box__body">
+                                        An intelligent function to distribute electrical power efficiently manages power
+                                        consumption, ensure energy efficiency, and enhance operational reliability.
+                                        Reduces operational costs, increases system longevity, and contributes to
+                                        sustainability by lowering consumption.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Select Parent Group Popup offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="changeGroup">
+        <!-- Offcanvas Header -->
+        <div class="offcanvas-header">
+            <div class="offcanvas-title">Change Group</div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-tertiary func-close-offcanvas-btn">Change</button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+        </div>
+        <div class="input-group input-group-sm">
+            <span class="input-group-text">
+                <span class="material-symbols-outlined">search</span>
+            </span>
+            <input type="text" class="form-control no_left_bdr" placeholder="search">
+        </div>
+        <div class="tree">
+            <ul>
+                <li>
+                    <span class="tree__title">
+                        <input class="form-check-input" type="radio" value="" id="first" name="parent-group">
+                        <label class="form-check-label" for="first">First</label>
+                    </span>
+                    <ul class="tree__nested">
+                        <li>
+                            <span class="tree__title">
+                                <input class="form-check-input" type="radio" value="" id="first-1" name="parent-group">
+                                <label class="form-check-label" for="first-1">First 1</label>
+                            </span>
+                            <ul class="tree__nested">
+                                <li>
+                                    <span class="tree__title">
+                                        <input class="form-check-input" type="radio" value="" id="first-1-1"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="first-1-1">First 1-1</label>
+                                    </span>
+                                    <ul class="tree__nested">
+                                        <li>
+                                            <span class="tree__title">
+                                                <input class="form-check-input" type="radio" value="" id="first-1-1-1"
+                                                    name="parent-group">
+                                                <label class="form-check-label" for="first-1-1-1">First 1-1-1</label>
+                                            </span>
+                                            <ul class="tree__nested">
+                                                <li>
+                                                    <span class="tree__title">
+                                                        <input class="form-check-input" type="radio" value=""
+                                                            id="first-1-1-1-1" name="parent-group">
+                                                        <label class="form-check-label" for="first-1-1-1-1">First
+                                                            1-1-1-1</label>
+                                                    </span>
+                                                    <ul class="tree__nested">
+                                                        <li>
+                                                            <span class="tree__title">
+                                                                <input class="form-check-input" type="radio" value=""
+                                                                    id="first-1-1-1-1-1" name="parent-group">
+                                                                <label class="form-check-label"
+                                                                    for="first-1-1-1-1-1">First 1-1-1-1-1</label>
+                                                            </span>
+                                                            <ul class="tree__nested">
+                                                                <li>
+                                                                    <span class="tree__title">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            value="" id="first-1-1-1-1-1-1"
+                                                                            name="parent-group">
+                                                                        <label class="form-check-label"
+                                                                            for="first-1-1-1-1-1-1">First
+                                                                            1-1-1-1-1-1</label>
+                                                                    </span>
+                                                                    <ul class="tree__nested">
+                                                                        <li>
+                                                                            <span class="tree__title no-child">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="first-1-1-1-1-1-1-1"
+                                                                                    name="parent-group">
+                                                                                <label class="form-check-label"
+                                                                                    for="first-1-1-1-1-1-1-1">First
+                                                                                    1-1-1-1-1-1-1</label>
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="tree__title no-child">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="first-1-1-1-1-1-1-2"
+                                                                                    name="parent-group">
+                                                                                <label class="form-check-label"
+                                                                                    for="first-1-1-1-1-1-1-2">First
+                                                                                    1-1-1-1-1-1-2</label>
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="tree__title no-child">
+                                                                                <input class="form-check-input"
+                                                                                    type="radio" value=""
+                                                                                    id="first-1-1-1-1-1-1-3"
+                                                                                    name="parent-group">
+                                                                                <label class="form-check-label"
+                                                                                    for="first-1-1-1-1-1-1-3">First
+                                                                                    1-1-1-1-1-1-3</label>
+                                                                            </span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="tree__title no-child">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            value="" id="first-1-1-1-1-1-2"
+                                                                            name="parent-group">
+                                                                        <label class="form-check-label"
+                                                                            for="first-1-1-1-1-1-2">First
+                                                                            1-1-1-1-1-2</label>
+                                                                    </span>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="tree__title no-child">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            value="" id="first-1-1-1-1-1-3"
+                                                                            name="parent-group">
+                                                                        <label class="form-check-label"
+                                                                            for="first-1-1-1-1-1-3">First
+                                                                            1-1-1-1-1-3</label>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tree__title no-child">
+                                                                <input class="form-check-input" type="radio" value=""
+                                                                    id="first-1-1-1-1-2" name="parent-group">
+                                                                <label class="form-check-label"
+                                                                    for="first-1-1-1-1-2">First 1-1-1-1-2</label>
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tree__title no-child">
+                                                                <input class="form-check-input" type="radio" value=""
+                                                                    id="first-1-1-1-1-3" name="parent-group">
+                                                                <label class="form-check-label"
+                                                                    for="first-1-1-1-1-3">First 1-1-1-1-3</label>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="tree__title no-child">
+                                                        <input class="form-check-input" type="radio" value=""
+                                                            id="first-1-1-1-2" name="parent-group">
+                                                        <label class="form-check-label" for="first-1-1-1-2">First
+                                                            1-1-1-2</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="tree__title no-child">
+                                                        <input class="form-check-input" type="radio" value=""
+                                                            id="first-1-1-1-3" name="parent-group">
+                                                        <label class="form-check-label" for="first-1-1-1-3">First
+                                                            1-1-1-3</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="tree__title no-child">
+                                                <input class="form-check-input" type="radio" value="" id="first-1-1-2"
+                                                    name="parent-group">
+                                                <label class="form-check-label" for="first-1-1-2">First 1-1-2</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="tree__title no-child">
+                                                <input class="form-check-input" type="radio" value="" id="first-1-1-3"
+                                                    name="parent-group">
+                                                <label class="form-check-label" for="first-1-1-3">First 1-1-3</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree__title no-child">
+                                        <input class="form-check-input" type="radio" value="" id="first-1-2"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="first-1-2">First 1-2</label>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="tree__title no-child">
+                                        <input class="form-check-input" type="radio" value="" id="first-1-3"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="first-1-3">First 1-3</label>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="tree__title no-child">
+                                <input class="form-check-input" type="radio" value="" id="first-2" name="parent-group">
+                                <label class="form-check-label" for="first-2">First 2</label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tree__title no-child">
+                                <input class="form-check-input" type="radio" value="" id="first-3" name="parent-group">
+                                <label class="form-check-label" for="first-3">First 3</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree__title">
+                        <input class="form-check-input" type="radio" value="" id="second" name="parent-group">
+                        <label class="form-check-label" for="second">Second </label>
+                    </span>
+
+                    <ul class="tree__nested">
+                        <li>
+                            <span class="tree__title">
+                                <input class="form-check-input" type="radio" value="" id="second-1" name="parent-group">
+                                <label class="form-check-label" for="second-1">Second 1</label>
+                            </span>
+                            <ul class="tree__nested">
+                                <li>
+                                    <span class="tree__title no-child">
+                                        <input class="form-check-input" type="radio" value="" id="second-1-1"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="second-1-1">Second 1-1</label>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="tree__title no-child">
+                                        <input class="form-check-input" type="radio" value="" id="second-1-2"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="second-1-2">Second 1-2</label>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="tree__title no-child">
+                                        <input class="form-check-input" type="radio" value="" id="second-1-3"
+                                            name="parent-group">
+                                        <label class="form-check-label" for="second-1-3">Second 1-3</label>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="tree__title no-child">
+                                <input class="form-check-input" type="radio" value="" id="second-2" name="parent-group">
+                                <label class="form-check-label" for="second-2">Second 2</label>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="tree__title no-child">
+                                <input class="form-check-input" type="radio" value="" id="second-3" name="parent-group">
+                                <label class="form-check-label" for="second-3">Second 3</label>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree__title no-child">
+                        <input class="form-check-input" type="radio" value="" id="third" name="parent-group">
+                        <label class="form-check-label" for="third">Third </label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Delete Schedule Modal -->
+    <div class="modal fade" id="deleteSchedule" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Delete Schedule</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Schedule 1</div>
+                    </div>
+                    <div>Streaming on : 28 August, 2024 02:31 pm</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to delete this schedule?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview schedule Modal -->
+    <div class="modal fade" id="previewSchedule" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Preview Schedule</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Schedule 1</div>
+                    </div>
+                    <div>Streaming on : 28 August, 2024 02:31 pm</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <!-- Video -->
+                        <video autoplay muted loop class="video-container__video">
+                            <source src="./assets/videos/Osel_Player_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit General Settings Form Modal -->
+    <div class="modal fade" id="editGeneralSettings" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-0">
+                    <h1 class="modal-title">Edit General Settings</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Display 1</div>
+                    </div>
+                </div>
+                <!-- Form - Edit General settings-->
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Display Name<span class="required">*</span></label>
+                            <input type="text" class="form-control" value="Display 1" placeholder="Enter display name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Connectivity Mode<span class="required">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="connect-mode" id="connect-online">
+                                <label class="form-check-label" for="connect-online">Online</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="connect-mode" id="connect-offline"
+                                    checked>
+                                <label class="form-check-label" for="connect-offline">Offline</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Connectivity Play Mode<span class="required">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="connect-play-mode" id="play-online">
+                                <label class="form-check-label" for="play-online">Online</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="connect-play-mode" id="play-offline"
+                                    checked>
+                                <label class="form-check-label" for="play-offline">Offline</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Screen Orientation<span class="required">*</span></label>
+                            <select class="form-select">
+                                <option selected>-- Select Orientation</option>
+                                <option value="1">0°</option>
+                                <option value="2">90°</option>
+                                <option value="3">180°</option>
+                                <option value="4">270°</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Player Settings Form Modal -->
+    <div class="modal fade" id="editPlayerSettings" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-0">
+                    <h1 class="modal-title">Edit Display Settings</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Display 1</div>
+                    </div>
+                </div>
+                <!-- Form - Edit General settings-->
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Screen Height (px)<span class="required">*</span></label>
+                            <input type="text" class="form-control" value="1080" placeholder="Enter screen height">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Screen Width (px)<span class="required">*</span></label>
+                            <input type="text" class="form-control" value="1980" placeholder="Enter screen height">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Heartbeat Interval (in seconds)<span
+                                    class="required">*</span></label>
+                            <input type="text" class="form-control" value="10" placeholder="Enter heartbeat interval">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">FOTA Flag<span class="required">*</span></label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change default image Modal -->
+    <div class="modal fade" id="changeImage" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-0">
+                    <h1 class="modal-title">Change Default Display Image</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Display 1</div>
+                    </div>
+                </div>
+                <!-- Form - Edit General settings-->
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Preview schedule Modal -->
+    <div class="modal fade" id="previewStreaming" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Preview Streaming</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Schedule 3</div>
+                    </div>
+                    <div>Streaming on : 28 August, 2024 02:31 pm</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <!-- Video -->
+                        <video autoplay muted loop class="video-container__video">
+                            <source src="./assets/videos/Osel_Player_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reboot Display Modal -->
+    <div class="modal fade" id="rebootDisplay" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Reboot Display</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Display 1</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to reboot this display?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen Scheduler Modal -->
+    <div class="modal modal-lg fade" id="powerSchedule" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Power Scheduler</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <tr>
+                                <th></th>
+                                <th>ON Time </th>
+                                <th>OFF Time</th>
+                                <th>Applicable Days</th>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" class="form-check-input" style="transform: scale(1.25);" />
+                                </td>
+                                <td><input type="time" name="on-time" class="form-control form-control-sm"></td>
+                                <td><input type="time" name="-off-time" class="form-control form-control-sm"></td>
+                                <td>
+                                    <div class="dropdown">
+
+                                        <input type="checkbox" class="btn-check" id="all">
+                                        <label class="btn btn-outline-primary" for="all">All</label>
+
+                                        <input type="checkbox" class="btn-check" id="monday">
+                                        <label class="btn btn-outline-primary" for="monday">M</label>
+
+                                        <input type="checkbox" class="btn-check" id="tuesday">
+                                        <label class="btn btn-outline-primary" for="tuesday">T</label>
+
+                                        <input type="checkbox" class="btn-check" id="wednesday">
+                                        <label class="btn btn-outline-primary" for="wednesday">W</label>
+
+                                        <input type="checkbox" class="btn-check" id="thursday">
+                                        <label class="btn btn-outline-primary" for="thursday">T</label>
+
+                                        <input type="checkbox" class="btn-check" id="friday" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="friday">F</label>
+
+                                        <input type="checkbox" class="btn-check" id="saturday">
+                                        <label class="btn btn-outline-primary" for="saturday">S</label>
+
+                                        <input type="checkbox" class="btn-check" id="sunday">
+                                        <label class="btn btn-outline-primary" for="sunday">S</label>
+
+
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-tertiary">Add New</a>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer mt-5">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script>
+
+        $(document).ready(function () {
+
+            // Close canvas while click on apply
+            $('.func-close-offcanvas-btn').click(function () {
+                $('.btn-close').trigger('click');
+            });
+
+            // Dynamic percentage
+            setPercentage(".func-storage", 85);
+            setPercentage(".func-ram", 55);
+
+            // Tree structure
+            toggleTree();
+
+        });
+
+
+        ///// Dynamic percentage circle storage
+        function setPercentage(selector, percentage) {
+            const usedColor = percentage < 80 ? "#005AAB" : '#E35A62';
+            const fullColor = "#D4EBFF";
+            $(selector).css('background', `conic-gradient( 
+                ${usedColor} 0% ${percentage}%, ${fullColor} ${percentage}% 100%
+            `);
+            $(`${selector} .percentage_num`).text(`${percentage}%`);
+        };
+
+        ///// Toggle Tree
+        function toggleTree() {
+            $('.tree__title').on('click', function () {
+                const $this = $(this);
+                const $nested = $(this).siblings('.tree__nested');
+
+                // Show Clicked nested child
+                $nested.toggleClass('active');
+                $this.toggleClass('open');
+
+                // Hide all inner child tree
+                if (!$nested.hasClass('active')) {
+                    $nested.find('.tree__nested').removeClass('active');
+                    $nested.find('.tree__title').removeClass('open');
+                };
+            });
+
+        };
+
+
+    </script>
+
+</body>
+
+</html>

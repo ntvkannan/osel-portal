@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Dashboard</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+
+</head>
+
+<body class="dashboard">
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <div class="col mb-4">
+
+                            <!-- Box - Dashboard -->
+                            <div class="dashboard-box">
+                                <!-- Header-->
+                                <div class="dashboard-box__header">
+                                    <!-- Header-->
+                                    <div class="fancy-header">
+                                        <div class="icon-circle">
+                                            <span class="material-symbols-outlined"> screenshot_monitor</span>
+                                        </div>
+                                        <div class="heading">
+                                            <div class="num">36</div>
+                                            <div class="txt">Display</div>
+                                        </div>
+                                    </div>
+                                    <!-- Badge -->
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span class="badge text-bg-success">Online:
+                                                <b>1</b></span></div>
+                                        <div class="inline-items__item"><span class="badge text-bg-danger">Offline:
+                                                <b>29</b> </span></div>
+                                    </div>
+                                </div>
+                                <!-- Body -->
+                                <div class="dashboard-box__body">
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <div class="circle func-storage m-auto mt-2">
+                                                <div class="circle__inner">
+                                                    <div class="circle__percentage"> <span
+                                                            class="percentage_num">75%</span> <span class="small">used
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="title-xs caps light mb-2">Storage</div>
+                                            <ul class="info-list">
+                                                <li>
+                                                    <span>Total</span>
+                                                    <span>: <b>12.02</b> GB</span>
+                                                </li>
+                                                <li>
+                                                    <span>Used</span>
+                                                    <span>: <b>7.85</b> GB</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <!-- Box - Dashboard -->
+                            <div class="dashboard-box">
+                                <!-- Header-->
+                                <div class="dashboard-box__header">
+                                    <!-- Header-->
+                                    <div class="fancy-header">
+                                        <div class="icon-circle">
+                                            <span class="material-symbols-outlined">photo_library</span>
+                                        </div>
+                                        <div class="heading">
+                                            <div class="num">240</div>
+                                            <div class="txt">Media</div>
+                                        </div>
+                                    </div>
+                                    <!-- Badge -->
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span class="badge text-bg-success">Approved:
+                                                <b>218</b></span></div>
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-danger">Unapproved:<b>22</b></span></div>
+                                    </div>
+                                </div>
+                                <!-- Body -->
+                                <div class="dashboard-box__body">
+                                    <canvas id="mediaChart" width="400" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <!-- Box - Dashboard -->
+                            <div class="dashboard-box">
+                                <!-- Header-->
+                                <div class="dashboard-box__header">
+                                    <!-- Heading -->
+                                    <div class="fancy-heading">
+                                        <div class="icon-circle">
+                                            <span class="material-symbols-outlined">calendar_month</span>
+                                        </div>
+                                        <div class="heading">
+                                            <div class="num">17</div>
+                                            <div class="txt">Schedule</div>
+                                        </div>
+                                    </div>
+                                    <!-- Badge -->
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span class="badge text-bg-success">Active:
+                                                <b>15</b></span></div>
+                                        <div class="inline-items__item"><span class="badge text-bg-danger">Inactive:
+                                                <b>2</b></span></div>
+                                    </div>
+                                </div>
+                                <!-- Body -->
+                                <div class="dashboard-box__body">
+                                    <div class="title-xs mb-2">Streaming Details</div>
+                                    <div class="db-info-box info">
+                                        <div>
+                                            <div class="title-xs caps">Currrent Streaming</div>
+                                            <div>Schedule 1</div>
+                                        </div>
+                                        <div class="db-info-box">
+                                            <div class="title-xs caps">Ends in</div>
+                                            <div class="time">12:30:47</div>
+                                        </div>
+                                    </div>
+                                    <div class="db-info-box info">
+                                        <div>
+                                            <div class="title-xs caps">Next Streaming</div>
+                                            <div>Schedule 2</div>
+                                        </div>
+                                        <div class="db-info-box">
+                                            <div class="title-xs caps">Starts in</div>
+                                            <div class="time">12:30:47</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col  mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0">
+                            <div class="title-md mb-2">Top 5 recent displays</div>
+
+                            <div class="dashboard-box no-bg">
+                                <!-- Info box -->
+                                <div class="db-info-box">
+                                    <div>
+                                        <div>Display 1</div>
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">Last response on Jun 26</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-success">Online</span></div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-box link">
+                                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info box -->
+                                <div class="db-info-box">
+                                    <div>
+                                        <div>Display 1</div>
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">Last response on Jun 26</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-success">Online</span></div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-box link">
+                                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info box -->
+                                <div class="db-info-box">
+                                    <div>
+                                        <div>Display 3</div>
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">Last response on Jun 26</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-danger">Offline</span></div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-box link">
+                                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info box -->
+                                <div class="db-info-box">
+                                    <div>
+                                        <div>Display 4</div>
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">Last response on Jun 26</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-danger">Offline</span></div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-box link">
+                                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Info box -->
+                                <div class="db-info-box">
+                                    <div>
+                                        <div>Display 5</div>
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">Last response on Jun 26</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items no-separator">
+                                        <div class="inline-items__item"><span
+                                                class="badge text-bg-danger">Offline</span></div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-box link">
+                                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0">
+                            <div class="title-md mb-2">Comparison of schedule count</div>
+                            <div class="dashboard-box equal-height">
+                                <div class="title-xs">Month wise comparison for 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="dashboard-box">
+
+
+                        <div class="title-md mb-2">Recent Activities</div>
+
+                        <div class=" fix-scroll">
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display added</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">photo_library</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media uploaded</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Scheduled</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <!-- 
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display added</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">photo_library</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media uploaded</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Scheduled</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display added</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">photo_library</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media uploaded</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Scheduled</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display added</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">photo_library</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media uploaded</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Scheduled</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display added</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">photo_library</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media uploaded</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Scheduled</div>
+                                    <div class="small">by <a href="#">Kannan</a></div>
+                                </div>
+                                <div class="recent__day">Today</div>
+                            </div>
+                             -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+            <div class="copyright">
+                <div>Copyright © 2024 <b>ÖSEL Devices Limited</b>. All Rights Reserved.</div>
+                <div>Powered by <b>Limitless Mobility Solutions.</b></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom Scripts returned by us -->
+    <script>
+
+        ///// Bootstrap Table
+        $(function () {
+            $('#table').bootstrapTable();
+        });
+
+
+        ///// To show view display poupp
+        $(document).ready(function () {
+            // Dynamic percentage
+            setPercentage(".func-storage", 70);
+            setPercentage(".func-ram", 40);
+        });
+
+
+
+        ///// Dynamic percentage circle storage
+        function setPercentage(selector, percentage) {
+            const usedColor = percentage < 80 ? "#005AAB" : '#E35A62';
+            const fullColor = "#D4EBFF";
+            $(selector).css('background', `conic-gradient( 
+                ${usedColor} 0% ${percentage}%, ${fullColor} ${percentage}% 100%
+            `);
+            $(`${selector} .percentage_num`).text(`${percentage}%`);
+        };
+
+    </script>
+
+    <!-- For Media Qty chart-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('mediaChart').getContext('2d');
+            const mediaChart = new Chart(ctx, {
+                type: 'bar', // Specify the chart type
+                data: {
+                    labels: ['Widget', 'PDF', 'Image', 'Video'], // Y-axis labels
+                    datasets: [{
+                        label: 'Qty',
+                        data: [22, 48, 90, 80], // X-axis values
+                        backgroundColor: [
+                            'rgba(145, 168, 251, 1)',
+                            'rgba(118, 220, 214, 1)',
+                            'rgba(255, 210, 123, 1)',
+                            'rgba(211, 138, 245, 1)'
+                        ],
+                        barThickness: 6,
+                        borderRadius: 16,
+                        pointStyle: 'line'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // Set indexAxis to 'y' to make it horizontal
+                    responsive: true, // Enable responsiveness
+                    maintainAspectRatio: true, // Allow the chart to resize freely
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                        },
+                        y: {
+                            grid: {
+                                display: false,  // Show the vertical gridlines
+                            },
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false // Hide the legend
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

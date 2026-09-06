@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Profile</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="profile.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <!-- Section - Profile -->
+            <section class="section-container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2">
+
+                        <!-- Profile Header -->
+                        <div class="profile">
+                            <div class="profile__header">
+                                <div class="profile__company-details">
+                                    <h5 class="company-name">ABC Company Pvt. Ltd.,</h5>
+                                    <div class="company-address">Bangalore.</div>
+                                </div>
+                            </div>
+
+                            <div class="profile__user-details">
+                                <div class="user-photo">
+                                    <img src="./assets/images/profile-image.png" />
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <div class="user-name">Kannan T</div>
+                                        <div class="user-pos">Admin</div>
+                                    </div>
+                                    <button class="btn btn-tertiary" data-bs-toggle="modal"
+                                        data-bs-target="#editProfile">Edit Profile</button>
+                                </div>
+
+                                <div class="inline-items mt-4">
+                                    <div class="inline-items__item">
+                                        <div class="icon-txt-box icon-txt-box-xs">
+                                            <div class="icon-box"><span
+                                                    class="material-symbols-outlined">phone_iphone</span></div>
+                                            <div class="icon-txt">+91 9958482411</div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-items__item">
+                                        <div class="icon-txt-box icon-txt-box-xs">
+                                            <div class="icon-box"><span class="material-symbols-outlined">mail</span>
+                                            </div>
+                                            <div class="icon-txt">kannan@savithru.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Profile Ifo box -->
+                        <div class="profile-info-box">
+                            <button class="btn btn-tertiary edit-btn" data-bs-toggle="modal"
+                                data-bs-target="#editOTP">Edit OTP Preference</button>
+                            <div class="profile_row">
+                                <div class="profile-label">OTP Preference</div>
+                                <div class="profile-value">Email</div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Ifo box -->
+                        <div class="profile-info-box">
+                            <button class="btn btn-tertiary edit-btn" data-bs-toggle="modal"
+                                data-bs-target="#resetPassword">Reset Password</button>
+                            <div class="profile_row">
+                                <div class="profile-label">Password</div>
+                                <div class="profile-value">You created on Jul 23, 2024</div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Ifo box -->
+                        <div class="profile-info-box">
+                            <button class="btn btn-tertiary edit-btn">Update Plan</button>
+                            <div class="profile_row">
+                                <div class="profile-label">Subscription Type</div>
+                                <div class="profile-value">Basic</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- Edit Profile - Modal -->
+    <div class="modal fade" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Edit Profile</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <form>
+                    <div class="modal-body">
+
+                        <div class="row row-cols-2 mb-3">
+                            <div>
+                                <label class="form-label">First Name<span class="required">*</span></label>
+                                <input type="text" value="Kannan" class="form-control" placeholder="Enter first name">
+                            </div>
+                            <div>
+                                <label class="form-label">Last Name<span class="required">*</span></label>
+                                <input type="text" value="T" class="form-control" placeholder="Enter last name">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mobile Number</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">+91</span>
+                                <input type="phone" value="9958482411" class="form-control"
+                                    placeholder="Enter phone number">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Edit OTP Preference - Modal -->
+    <div class="modal fade" id="editOTP" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Edit OTP Preference</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">OTP Preference<span class="required">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="preference" id="email" checked="">
+                                <label class="form-check-label" for="email">E-mail</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="preference" id="mobile">
+                                <label class="form-check-label" for="mobile">Mobile</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="preference" id="both">
+                                <label class="form-check-label" for="both">Both</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Password - Modal -->
+    <div class="modal fade" id="resetPassword" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Reset Password</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Current Password<span class="required">*</span></label>
+                            <input type="password" class="form-control" placeholder="Enter current password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">New Password<span class="required">*</span></label>
+                            <input type="password" class="form-control" placeholder="Enter New password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Re-enter Password<span class="required">*</span></label>
+                            <input type="password" class="form-control" placeholder="Re-enter New password">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+
+                    <div class="p-3 password-rule">
+                        <ul>
+                            <li>Password must contain: Minimum 8 characters</li>
+                            <li>Atleast 1 Upper Case</li>
+                            <li>1 Lower Case</li>
+                            <li>1 Number/Special Character.</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Users</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <!-- Page title -->
+            <header class="page-title-header">
+                <div class="page-title-header__left">
+                    <div class="title-lg">Edit Admin</div>
+                    <div class="inline-items breadcrm">
+                        <a href="dashboard.html" class="inline-items__item">Home</a>
+                        <a href="users.html" class="inline-items__item">Users</a>
+                        <a href="users-role.html" class="inline-items__item">Manage Role</a>
+                        <span class="inline-items__item">Edit Admin</span>
+                    </div>
+                </div>
+                <div class="page-title-header__right">
+                    <div class="inline-items no-separator">
+                        <div class="inline-items__item">
+                            <a href="users-role.html" class="btn btn-primary">Update</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <section class="items-container mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="mb-3">
+                            <label class="form-label">Role Name<span class="required">*</span></label>
+                            <input type="text" class="form-control" value="Admin" placeholder="Enter role name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description<span class="required">*</span></label>
+                            <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>
+                        </div>
+
+                        <!-- Permissions -->
+                        <div class="title-md mt-5">Permissions</div>
+
+                        <!-- Ladscape Card with accordion -->
+                        <div class="dcard">
+                            <!-- Permission Module Name with form switch -->
+                            <div class="dcard__header">
+                                <div class="dcard__title-no-ellipsis">Display</div>
+                            </div>
+                            <!-- Permission items container -->
+                            <div class="info-box  m-0 mt-2 toggle">
+                                <!-- Number of item info with collapse arrow -->
+                                <div class="info-box__header mx-1 my-0 align-items-center">
+                                    <div class="info-box__title">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="ms-1"> 0 of 10 permissions activated </span>
+                                    </div>
+                                    <a class="collapsed toggle-arrow" data-bs-toggle="collapse"
+                                        data-bs-target="#assignedDisplay">
+                                        <span class="material-symbols-outlined">expand_circle_up</span>
+                                        <span class="material-symbols-outlined">expand_circle_down</span>
+                                    </a>
+                                </div>
+                                <!-- Check box list inside collapse -->
+                                <div class="collapse mt-1" id="assignedDisplay">
+                                    <ul class="check-radio-list white-bg">
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="one">
+                                            <label class="form-check-label" for="one">Add display</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="two">
+                                            <label class="form-check-label" for="two">Assign schedule</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="three">
+                                            <label class="form-check-label" for="three">Authorize display</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="four">
+                                            <label class="form-check-label" for="four">Edit display
+                                                configuration</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="five">
+                                            <label class="form-check-label" for="five">Display list</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="six">
+                                            <label class="form-check-label" for="six">Manage display group</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="seven">
+                                            <label class="form-check-label" for="seven">Manage key</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="eight">
+                                            <label class="form-check-label" for="eight">Reboot display</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="nine">
+                                            <label class="form-check-label" for="nine">Remove Schedule</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ten">
+                                            <label class="form-check-label" for="ten">View display configuration</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ladscape Card with accordion -->
+                        <div class="dcard">
+                            <!-- Permission Module Name with form switch -->
+                            <div class="dcard__header">
+                                <div class="dcard__title-no-ellipsis">Display Group</div>
+                            </div>
+                            <!-- Permission items container -->
+                            <div class="info-box m-0 mt-2 toggle">
+                                <!-- Number of item info with collapse arrow -->
+                                <div class="info-box__header mx-1 my-0 align-items-center">
+                                    <div class="info-box__title">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="ms-1"> 0 of 10 permissions activated </span>
+                                    </div>
+                                    <a class="collapsed toggle-arrow" data-bs-toggle="collapse"
+                                        data-bs-target="#assignedDisplayGroup">
+                                        <span class="material-symbols-outlined">expand_circle_up</span>
+                                        <span class="material-symbols-outlined">expand_circle_down</span>
+                                    </a>
+                                </div>
+                                <!-- Check box list inside collapse -->
+                                <div class="collapse mt-1" id="assignedDisplayGroup">
+                                    <ul class="check-radio-list white-bg">
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="one">
+                                            <label class="form-check-label" for="one">One</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="two">
+                                            <label class="form-check-label" for="two">Tow</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="three">
+                                            <label class="form-check-label" for="three">Three</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="four">
+                                            <label class="form-check-label" for="four">Four</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="five">
+                                            <label class="form-check-label" for="five">Five</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="six">
+                                            <label class="form-check-label" for="six">Six</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="seven">
+                                            <label class="form-check-label" for="seven">Seven</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="eight">
+                                            <label class="form-check-label" for="eight">Eight</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="nine">
+                                            <label class="form-check-label" for="nine">Nine</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ten">
+                                            <label class="form-check-label" for="ten">Ten</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ladscape Card with accordion -->
+                        <div class="dcard">
+                            <!-- Permission Module Name with form switch -->
+                            <div class="dcard__header">
+                                <div class="dcard__title-no-ellipsis">Layout</div>
+                            </div>
+                            <!-- Permission items container -->
+                            <div class="info-box m-0 mt-2 toggle">
+                                <!-- Number of item info with collapse arrow -->
+                                <div class="info-box__header mx-1 my-0 align-items-center">
+                                    <div class="info-box__title">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="ms-1"> 0 of 10 permissions activated </span>
+                                    </div>
+                                    <a class="collapsed toggle-arrow" data-bs-toggle="collapse"
+                                        data-bs-target="#assignedLayout">
+                                        <span class="material-symbols-outlined">expand_circle_up</span>
+                                        <span class="material-symbols-outlined">expand_circle_down</span>
+                                    </a>
+                                </div>
+                                <!-- Check box list inside collapse -->
+                                <div class="collapse mt-1" id="assignedLayout">
+                                    <ul class="check-radio-list white-bg">
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="one">
+                                            <label class="form-check-label" for="one">One</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="two">
+                                            <label class="form-check-label" for="two">Tow</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="three">
+                                            <label class="form-check-label" for="three">Three</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="four">
+                                            <label class="form-check-label" for="four">Four</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="five">
+                                            <label class="form-check-label" for="five">Five</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="six">
+                                            <label class="form-check-label" for="six">Six</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="seven">
+                                            <label class="form-check-label" for="seven">Seven</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="eight">
+                                            <label class="form-check-label" for="eight">Eight</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="nine">
+                                            <label class="form-check-label" for="nine">Nine</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ten">
+                                            <label class="form-check-label" for="ten">Ten</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal - Add user -->
+    <div class="modal fade" id="addRole" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Add Role</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Role Name<span class="required">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter role name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description<span class="required">*</span></label>
+                            <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Edit user -->
+    <div class="modal fade" id="editUser" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-0">
+                    <h1 class="modal-title">Edit User</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Kannan T</div>
+                    </div>
+                    <div>Admin</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="row row-cols-2 mb-3">
+                            <div>
+                                <label class="form-label">First Name<span class="required">*</span></label>
+                                <input type="text" value="Kannan" class="form-control" placeholder="Enter first name">
+                            </div>
+                            <div>
+                                <label class="form-label">Last Name<span class="required">*</span></label>
+                                <input type="text" value="T" class="form-control" placeholder="Enter last name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email ID<span class="required">*</span></label>
+                            <input type="email" value="kannan@gmail.com" class="form-control"
+                                placeholder="Enter email id">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Role<span class="required">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="role" id="admin" checked>
+                                <label class="form-check-label" for="admin">Admin</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="role" id="authorizer">
+                                <label class="form-check-label" for="authorizer">Authorizer</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="role" id="bublisher">
+                                <label class="form-check-label" for="bublisher">Publisher</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Delete user -->
+    <div class="modal fade" id="deleteRole" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Delete Role</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Admin</div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to delete this role?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Active/Inactive user -->
+    <div class="modal fade" id="changeStatus" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Active/Inactive User</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Kannan T</div>
+                    </div>
+                    <div>Admin</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to deactivate this user?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Invite user -->
+    <div class="modal fade" id="inviteUser" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Invite User</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Kannan T</div>
+                    </div>
+                    <div>Admin</div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            Are you sure, do you want to send invite for this user?
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas - Filter -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filterPopup">
+        <!-- Offcanvas Header -->
+        <div class="offcanvas-header">
+            <div class="offcanvas-title">Filters</div>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-tertiary func-close-offcanvas-btn fn-apply-filter-btn">Apply</button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+        </div>
+        <!-- Offcanvas Body-->
+        <div class="offcanvas-body">
+            <div class="title-md">User Role</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="all-role">
+                <label class="form-check-label" for="all-role">All</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="admin-role">
+                <label class="form-check-label" for="admin-role">Admin</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="authorizer-role">
+                <label class="form-check-label" for="authorizer-role">Authorizer</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="publisher-role">
+                <label class="form-check-label" for="publisher-role">Publisher</label>
+            </div>
+
+            <hr />
+
+            <div class="title-md">User Status</div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="all-status">
+                <label class="form-check-label" for="all-status">All</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="active-user">
+                <label class="form-check-label" for="active-user">Active</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="inactive-user">
+                <label class="form-check-label" for="inactive-user">Inactive</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom Scripts returned by us -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>

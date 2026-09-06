@@ -1,0 +1,2315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSEL Signage | Layout</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    <link href="./assets/css/osel.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===== Sidebar and Main Nav ===== -->
+    <section class="side-bar">
+        <div class="side-bar__top">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">dashboard</span></div>
+                                <div class="icon-txt">Dashboard</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="display.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">Display</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="media.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">photo_library</span></div>
+                                <div class="icon-txt">Media</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layout.html" class="active">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">table_rows</span></div>
+                                <div class="icon-txt">Layout</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">calendar_today</span>
+                                </div>
+                                <div class="icon-txt">Schedule</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">account_box</span></div>
+                                <div class="icon-txt">Users</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">lab_profile</span></div>
+                                <div class="icon-txt">Reports</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-bar__bottom">
+            <nav class="main-nav bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon-txt-box">
+                                <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                <div class="icon-txt">Lougout</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section><!-- /Sidebar -->
+
+    <!-- ===== Header ===== -->
+    <header class="page-header sticky-top">
+
+        <!-- Page header left side-->
+        <div class="page-header__left">
+            <div class="icon-box" id="toggle-sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="page-header__logo">
+                <img src="./assets/images/osel-logo.png" alt="OSEL Logo" />
+            </div>
+        </div>
+
+        <!-- Page header right side-->
+        <div class="page-header__right">
+            <div class="page-header__company">ABC Company</div>
+            <div class="separator">|</div>
+            <div class="page-header__user-box">
+                <div class="page-header__user-photo">
+                    <img src="./assets/images/admin.png" alt="admin" />
+                </div>
+                <div class="page-header__user-name">Kannan</div>
+                <div class="dropdown">
+                    <div class="icon-box" data-bs-toggle="dropdown">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="dropdown-menu header dark-bg">
+                        <li class="inner-profile">
+                            <div class="page-header__user-box">
+                                <div class="page-header__user-photo">
+                                    <img src="./assets/images/admin.png" alt="admin" />
+                                </div>
+                                <div class="page-header__user-name inner">
+                                    <b>Kannan</b> <br>
+                                    ABC Company
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">account_circle</span>
+                                    </div>
+                                    <div class="icon-txt">My Profile</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">lock</span></div>
+                                    <div class="icon-txt">Change Password</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">settings</span></div>
+                                    <div class="icon-txt">Settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="index.html">
+                                <div class="icon-txt-box">
+                                    <div class="icon-box"><span class="material-symbols-outlined">logout</span></div>
+                                    <div class="icon-txt">Logout</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End header -->
+
+    <!-- ===== Page content ===== -->
+    <main class="page-body">
+        <div class="container-xxl">
+
+            <!-- Page title -->
+            <header class="page-title-header">
+                <div class="page-title-header__left">
+                    <div class="title-lg">New Layout</div>
+                    <div class="inline-items breadcrm">
+                        <a href="dashboard.html" class="inline-items__item">Home</a>
+                        <a href="layout.html" class="inline-items__item">Layouts</a>
+                        <span class="inline-items__item">New Layout</span>
+                    </div>
+                </div>
+                <div class="page-title-header__right">
+                    <div class="inline-items no-separator">
+                        <div class="inline-items__item fn-prev-btn"><a class="btn btn-secondary">Previous</a></div>
+                        <div class="inline-items__item fn-next-btn"><a class="btn btn-primary">Next</a></div>
+                        <div class="inline-items__item fn-submit-btn"><a class="btn btn-primary"
+                                href="layout.html">Save</a></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Steps indication -->
+            <div class="section-container">
+                <div class="steps">
+                    <div class="steps__container-indicator fn-indicator-ctr">
+                        <div class="steps__progress-bar"></div>
+                        <div class="step active" id="step-indicator-1">
+                            <div class="step__number">1</div>
+                            <div class="step__name">New Layout</div>
+                        </div>
+                        <div class="step" id="step-indicator-2">
+                            <div class="step__number">2</div>
+                            <div class="step__name">Choose Template</div>
+                        </div>
+                        <div class="step" id="step-indicator-3">
+                            <div class="step__number">3</div>
+                            <div class="step__name">Assign Media</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps Content -->
+            <div class="steps-contend">
+                <!-- Step 1-->
+                <div class="step" id="step-content-1">
+                    <!-- Title -->
+                    <div class="title-lg text-center mb-4"><span class="border-bottom border-primary">New Layout</span>
+                    </div>
+                    <!-- Form -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="mb-3">
+                                <label class="form-label">Layout Name<span class="required">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Layout name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Layout Description<span class="required">*</span></label>
+                                <textarea class="form-control" placeholder="Enter description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2-->
+                <div class="step" id="step-content-2">
+                    <!-- Title -->
+                    <div class="title-lg text-center mb-1"><span class="border-bottom border-primary">Choose
+                            Template</span></div>
+
+                    <!-- Entered Info summary -->
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-10 col-lg-6">
+                            <div class="info-box">
+                                <ul class="info-list">
+                                    <li>
+                                        <span>Layout Name</span>
+                                        <span>: New Layout 1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Help text -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 mb-4">
+                            <div class="icon-txt-box icon-txt-box-xs justify-content-center">
+                                <div class="icon-box"><span class="material-symbols-outlined">help</span></div>
+                                <div class="icon-txt">Please choose template form template library</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Template library -->
+                    <div class="library-items fn-media-library">
+                        <!-- Row - Title -->
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <!-- Title -->
+                            <div class="library-items__title">Template Library</div>
+                            <!-- Search -->
+                            <div class="search">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-text">
+                                        <span class="material-symbols-outlined">search</span>
+                                    </span>
+                                    <input type="text" class="form-control no_left_bdr" placeholder="search">
+                                </div>
+                                <div class="icon-box clear-txt-btn">
+                                    <span class="material-symbols-outlined">close_small</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row - Filter -->
+                        <div class="d-flex gap-1 mb-2">
+                            <!-- Sord dropdown-->
+                            <div class="dropdown">
+                                <div class="filter" data-bs-toggle="dropdown">
+                                    <div class="filter__label">Sort by :</div>
+                                    <div class="filter__selected">Newest</div>
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-sm">
+                                    <li><a class="dropdown-item" href="#">Name</a></li>
+                                    <li><a class="dropdown-item" href="#">Newest</a></li>
+                                    <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                </ul>
+                            </div>
+                            <!-- Filter by region dropdown-->
+                            <div class="dropdown">
+                                <div class="filter" data-bs-toggle="dropdown">
+                                    <div class="filter__label">Region :</div>
+                                    <div class="filter__selected">All</div>
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-sm">
+                                    <li><a class="dropdown-item">All</a></li>
+                                    <li><a class="dropdown-item">1</a></li>
+                                    <li><a class="dropdown-item">2</a></li>
+                                    <li><a class="dropdown-item">3</a></li>
+                                    <li><a class="dropdown-item">4</a></li>
+                                    <li><a class="dropdown-item">above 4</a></li>
+                                </ul>
+                            </div>
+                            <!-- Filter by created dropdown -->
+                            <div class="dropdown">
+                                <div class="filter" data-bs-toggle="dropdown">
+                                    <div class="filter__label">Created by :</div>
+                                    <div class="filter__selected">All</div>
+                                    <div class="icon-box">
+                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-sm">
+                                    <li><a class="dropdown-item" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">User 1</a></li>
+                                    <li><a class="dropdown-item" href="#">user 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Row - Selected items count info and action == -->
+                        <div class="d-flex align-items-center border-top border-white pt-1">
+                            <div class="inline-items spacing-xs">
+                                <div class="inline-items__item"><input type="checkbox" class="form-check-input"> </div>
+                                <div class="inline-items__item"><b>0</b> of 6 selected</div>
+                            </div>
+                        </div>
+                        <!-- Container - Media items == -->
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card-->
+                            <div class="col">
+                                <div class="gdcard no-box">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <img src="./assets/images/template.png" class="img-fluid" />
+                                        <span class="badge text-bg-lightdark">4 region</span>
+                                    </div>
+                                    <div class="gdcard__maintxt justify">
+                                        <div class="gdcard__title with-checckbox">
+                                            <input class="form-check-input" type="checkbox" id="card1">
+                                            <label class="form-check-label" for="card1">Template 1 </label>
+                                        </div>
+                                    </div>
+                                    <div class="gdcard__subtxt">
+                                        <div class="inline-items">
+                                            <div class="inline-items__item">1024 x 552</div>
+                                            <div class="inline-items__item">16:9 ratio</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination - with number of item control == -->
+                        <div class="d-flex align-items-center justify-content-end">
+                            <!-- Pagination -->
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item disabled">
+                                    <span class="page-link">
+                                        <div class="icon-box icon-box-xs"><span
+                                                class="material-symbols-outlined">skip_previous</span></div>
+                                    </span>
+                                </li>
+                                <li class="page-item disabled">
+                                    <span class="page-link">
+                                        <div class="icon-box icon-box-xs"><span
+                                                class="material-symbols-outlined">chevron_left</span></div>
+                                    </span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page"> <span class="page-link">2</span></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <span class="page-link">
+                                        <div class="icon-box icon-box-xs"><span
+                                                class="material-symbols-outlined">chevron_right</span></div>
+                                    </span>
+                                </li>
+                                <li class="page-item">
+                                    <span class="page-link">
+                                        <div class="icon-box icon-box-xs"><span
+                                                class="material-symbols-outlined">skip_next</span></div>
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Step 3-->
+                <div class="step" id="step-content-3">
+
+                    <!-- Title -->
+                    <div class="title-lg text-center mb-5"><span class="border-bottom border-primary">Assign
+                            Media</span></div>
+
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col">
+                            <div class="manage-box">
+                                <!-- Title Row -->
+                                <div class="manage-box__row justify-content-between">
+                                    <div class="title-md">New Layout 1</div>
+                                    <div class="btns">
+                                        <a class="icon-txt-box icon-txt-box-xs" data-bs-toggle="modal"
+                                            data-bs-target="#previewLayout">
+                                            <div class="icon-box"><span
+                                                    class="material-symbols-outlined">visibility</span></div>
+                                            <div class="icon-txt">Preview</div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Info Row -->
+                                <div class="manage-box__row light-bg">
+                                    <div class="inline-items">
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">screenshot_monitor</span>
+                                                </div>
+                                                <div class="icon-txt">1024x768 | 16:9</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">view_stream</span></div>
+                                                <div class="icon-txt">2 regions</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">schedule</span></div>
+                                                <div class="icon-txt">0 sec</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Layout view  -->
+                                <div class="design-container out">
+                                    <div class="design-container in">
+                                        <div class="row row-cols-1">
+                                            <div class="col">
+                                                <!-- Region Container-->
+                                                <div class="region-box selected" data-name="Region 1">
+
+                                                </div>
+
+                                                <!-- Region Container-->
+                                                <div class="region-box" data-name="Region 2">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="manage-box">
+                                <!-- Row - Title -->
+                                <div class="manage-box__row justify-content-between">
+                                    <div class="title-md">Region 1</div>
+                                    <div class="btns">
+                                        <a class="icon-txt-box icon-txt-box-xs" data-bs-toggle="modal"
+                                            data-bs-target="#previewRegion">
+                                            <div class="icon-box"><span
+                                                    class="material-symbols-outlined">visibility</span></div>
+                                            <div class="icon-txt">Preview</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Row - Info -->
+                                <div class="manage-box__row light-bg">
+                                    <div class="inline-items">
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">aspect_ratio</span></div>
+                                                <div class="icon-txt">1024x768 | 16:9</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">align_items_stretch</span>
+                                                </div>
+                                                <div class="icon-txt">0 items</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">schedule</span></div>
+                                                <div class="icon-txt">0 sec</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row - Added items info -->
+                                <div class="manage-box__row justify-content-between">
+                                    <div class="title-xs">No items added</div>
+                                    <div class="btns">
+                                        <div class="icon-txt-box icon-txt-box-xs fn-info-toggle-btn">
+                                            <span class="material-symbols-outlined">info</span>
+                                        </div>
+                                        <div class="icon-txt-box icon-txt-box-xs fn-style-toggle-btn">
+                                            <span class="material-symbols-outlined">design_services</span>
+                                        </div>
+                                        <div class="icon-txt-box icon-txt-box-xs">
+                                            <span class="material-symbols-outlined">close</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Container - Body -->
+                                <div class="manage-box__container">
+                                    <div class="main-content flex-column">
+                                        <div class="text-center mb-3">There is no any items assigned for this region
+                                        </div>
+                                        <buttn class="btn btn-dark btn-lg" data-bs-toggle="modal"
+                                            data-bs-target="#assignMedia">Assign Media</buttn>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manage-box">
+                                <!-- Row - Title -->
+                                <div class="manage-box__row justify-content-between">
+                                    <div class="title-md">Region 1</div>
+                                    <div class="btns">
+                                        <a class="icon-txt-box icon-txt-box-xs" data-bs-toggle="modal"
+                                            data-bs-target="#previewPlaylist">
+                                            <div class="icon-box"><span
+                                                    class="material-symbols-outlined">visibility</span></div>
+                                            <div class="icon-txt">Preview</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Row - Info -->
+                                <div class="manage-box__row light-bg">
+                                    <div class="inline-items">
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">aspect_ratio</span></div>
+                                                <div class="icon-txt">1024x768 | 16:9</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">align_items_stretch</span>
+                                                </div>
+                                                <div class="icon-txt">0 items</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-items__item">
+                                            <div class="icon-txt-box icon-txt-box-xs">
+                                                <div class="icon-box"><span
+                                                        class="material-symbols-outlined">schedule</span></div>
+                                                <div class="icon-txt">0 sec</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row - Added items info -->
+                                <div class="manage-box__row justify-content-between">
+                                    <div class="title-xs">No items added</div>
+                                    <div class="btns">
+                                        <div class="icon-txt-box icon-txt-box-xs fn-info-toggle-btn">
+                                            <span class="material-symbols-outlined">info</span>
+                                        </div>
+                                        <div class="icon-txt-box icon-txt-box-xs fn-style-toggle-btn">
+                                            <span class="material-symbols-outlined">design_services</span>
+                                        </div>
+                                        <div class="icon-txt-box icon-txt-box-xs">
+                                            <span class="material-symbols-outlined">close</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Container - Body -->
+                                <div class="manage-box__container">
+                                    <div class="main-content">
+
+                                        <!-- Layout view  -->
+                                        <div class="design-container out">
+                                            <div class="design-container in">
+                                                <!-- Region Container-->
+                                                <div class="region-box selected" data-name="">
+                                                    <img src="./assets/images/media.png" class="img-fluid" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right-bar fn-style-media">
+                                        <!-- Tool -->
+                                        <div class="tool-box">
+                                            <div class="tool-header">
+                                                <div class="text-uppercase small fw-bold">Style</div>
+                                                <button class="btn btn-sm btn-tertiary">Apply</button>
+                                            </div>
+
+                                            <div class="tool-body">
+
+                                                <!-- Dimention Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Background</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <input type="color" value="#EAEEF7">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <input type="text" class="form-control" value="#EAEEF7">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Dimention Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Text color</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <input type="color" value="##1C1B1F">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <input type="text" class="form-control" value="##1C1B1F">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Dimention Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Text Size</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <select class="form-select form-select-sm">
+                                                                <option selected>12</option>
+                                                                <option value="1">8</option>
+                                                                <option value="2">10</option>
+                                                                <option value="3">12</option>
+                                                                <option value="3">14</option>
+                                                                <option value="3">16</option>
+                                                                <option value="3">18</option>
+                                                                <option value="3">20</option>
+                                                                <option value="3">24</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Dimention Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Dimention</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <label class="form-label">W</label>
+                                                            <input type="text" class="form-control" value="1280">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <label class="form-label">H</label>
+                                                            <input type="text" class="form-control" value="720">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Margin Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Margin</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <label class="form-label">T</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <label class="form-label">R</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <label class="form-label">B</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <label class="form-label">L</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Padding Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Padding</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <label class="form-label">T</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <label class="form-label">R</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <label class="form-label">B</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <label class="form-label">L</label>
+                                                            <input type="text" class="form-control" value="0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Alignment Inputs -->
+                                                <div class="tool-section">
+                                                    <div class="title-xs caps">Align Region</div>
+                                                    <div class="tool-row">
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span
+                                                                    class="material-symbols-outlined">align_flex_start</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span
+                                                                    class="material-symbols-outlined">align_flex_center</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span
+                                                                    class="material-symbols-outlined">align_flex_end</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span class="material-symbols-outlined"
+                                                                    style="rotate: 270deg;">align_flex_start</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span class="material-symbols-outlined"
+                                                                    style="rotate: 90deg;">align_flex_center</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tool-input">
+                                                            <div class="icon-box icon-box-xs">
+                                                                <span class="material-symbols-outlined"
+                                                                    style="rotate: 270deg;">align_flex_end</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right-bar fn-info-media">
+                                        <!-- Info -->
+                                        <div class="tool-box">
+                                            <div class="tool-header">
+                                                <div class="text-uppercase small fw-bold">Info</div>
+                                            </div>
+
+                                            <div class="tool-body">
+                                                <ul class="info-list column">
+                                                    <li>
+                                                        <span>Name</span>
+                                                        <span>Media Name</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Ratio</span>
+                                                        <span>16:9</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Group</span>
+                                                        <span>Group 1</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Type</span>
+                                                        <span>Image</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Duration</span>
+                                                        <span>10 sec</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <!-- Modal - Assign Media -->
+    <div class="modal  fade" id="assignMedia" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Media Library</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Tab buttons -->
+                <ul class="nav nav-underline nav-fill mt-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#media-tab-pane"
+                            aria-selected="true" role="tab">Media</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#widget-tab-pane"
+                            aria-selected="false" tabindex="-1" role="tab">Widget</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#playlist-tab-pane"
+                            aria-selected="false" tabindex="-1" role="tab">Playlist</button>
+                    </li>
+                </ul>
+
+
+                <div class="modal-body">
+                    <!-- Tab Contents -->
+                    <div class="tab-content">
+
+                        <!-- Media tab pane -->
+                        <div class="tab-pane fade show active" id="media-tab-pane" tabindex="0" role="tabpanel">
+                            <!-- Media Library -->
+                            <div class="library-items fn-media-library">
+                                <!-- Row - Title -->
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <!-- Title -->
+                                    <div class="library-items__title">Media Library</div>
+                                    <!-- Search -->
+                                    <div class="search">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </span>
+                                            <input type="text" class="form-control no_left_bdr" placeholder="search">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row - Filter -->
+                                <div class="d-flex gap-1 mb-2">
+                                    <!-- Sord dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Sort by :</div>
+                                            <div class="filter__selected">Newest</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">Name</a></li>
+                                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                                            <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by type dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Type :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Image</a></li>
+                                            <li><a class="dropdown-item" href="#">Video</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by media group dropdown -->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Group :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Container - Media items == -->
+                                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
+                                    <!-- Card - Media - Image -->
+                                    <div class="col">
+                                        <div class="gdcard">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Image name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card - Media - Video -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Video name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card - Media - Image -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Image name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card - Media - Video -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Video name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card - Media - Image -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Image name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card - Media - Video -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <img src="./assets/images/media.png" class="source" alt="media">
+                                                <div class="gdcard__micro-info top justify">
+                                                    <span class="badge text-bg-transparent">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9</div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Video name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Pagination - with number of item control == -->
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <!-- Pagination -->
+                                    <ul class="pagination pagination-sm">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_previous</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_left</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page"> <span
+                                                class="page-link">2</span></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_right</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_next</span></div>
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Widget tab pane -->
+                        <div class="tab-pane fade" id="widget-tab-pane" tabindex="0" role="tabpanel">
+                            <!-- Media Library -->
+                            <div class="library-items fn-media-library">
+                                <!-- Row - Title -->
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <!-- Title -->
+                                    <div class="library-items__title">Widget Library</div>
+                                    <!-- Search -->
+                                    <div class="search">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </span>
+                                            <input type="text" class="form-control no_left_bdr" placeholder="search">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row - Filter -->
+                                <div class="d-flex gap-1 mb-2">
+                                    <!-- Sord dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Sort by :</div>
+                                            <div class="filter__selected">Newest</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">Name</a></li>
+                                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                                            <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by type dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Type :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">PDF</a></li>
+                                            <li><a class="dropdown-item" href="#">etc...</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by media group dropdown -->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Group :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Container - Media items == -->
+                                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6">
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/pdf.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">picture_as_pdf</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">PDF name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/rss.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/scroll.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/static.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/live.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/youtube.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="col">
+                                        <div class="gdcard no-box">
+                                            <div class="gdcard__graphic">
+                                                <img src="./assets/images/media-dummy-174x100.png" class="solution">
+                                                <div class="icon-image">
+                                                    <img src="./assets/images/web.png" alt="media">
+                                                </div>
+                                                <div class="gdcard__micro-info top">
+                                                    <span class="badge text-bg-transparent m-0">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">widgets</span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+
+                                                <div class="gdcard__micro-info bottom right">
+                                                    <span class="badge text-bg-transparent">Group name</span>
+                                                </div>
+                                            </div>
+                                            <div class="gdcard__maintxt justify">
+                                                <div class="gdcard__title">Widget name</div>
+                                                <a class="btn btn-tertiary">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Pagination - with number of item control == -->
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <!-- Pagination -->
+                                    <ul class="pagination pagination-sm">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_previous</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_left</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page"> <span
+                                                class="page-link">2</span></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_right</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_next</span></div>
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Playlist tab pane -->
+                        <div class="tab-pane fade" id="playlist-tab-pane" tabindex="0" role="tabpanel">
+                            <!-- Media Library -->
+                            <div class="library-items fn-media-library">
+                                <!-- Row - Title -->
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <!-- Title -->
+                                    <div class="library-items__title">Playlist Library</div>
+                                    <!-- Search -->
+                                    <div class="search">
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-text">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </span>
+                                            <input type="text" class="form-control no_left_bdr" placeholder="search">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row - Filter -->
+                                <div class="d-flex gap-1 mb-2">
+                                    <!-- Sord dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Sort by :</div>
+                                            <div class="filter__selected">Newest</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">Name</a></li>
+                                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                                            <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by type dropdown-->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Type :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">PDF</a></li>
+                                            <li><a class="dropdown-item" href="#">etc...</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Filter by media group dropdown -->
+                                    <div class="dropdown">
+                                        <div class="filter" data-bs-toggle="dropdown">
+                                            <div class="filter__label">Group :</div>
+                                            <div class="filter__selected">All</div>
+                                            <div class="icon-box">
+                                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu dropdown-menu-sm">
+                                            <li><a class="dropdown-item" href="#">All</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Group 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Container - Media items == -->
+                                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4">
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card-->
+                                    <div class="col">
+                                        <div class="dcard func-view-playlist-btn">
+                                            <!-- Card Header -->
+                                            <div class="dcard__header justify">
+                                                <div class="dcard__title">Playlist 1</div>
+                                                <a class="btn btn-tertiary p-0">
+                                                    <div class="icon-box icon-box-xs"><span
+                                                            class="material-symbols-outlined">add</span></div>
+                                                </a>
+                                            </div>
+                                            <!-- Card micro info-->
+                                            <div class="dcard__info">
+                                                <div class="inline-items no-separator no-separator-xs">
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">aspect_ratio</span>
+                                                            </div>
+                                                            <div class="icon-txt">16:9 ratio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">movie</span></div>
+                                                            <div class="icon-txt">04</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inline-items__item">
+                                                        <div class="icon-txt-box icon-txt-box-xs">
+                                                            <div class="icon-box"><span
+                                                                    class="material-symbols-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="icon-txt">64 sec</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Pagination - with number of item control == -->
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <!-- Pagination -->
+                                    <ul class="pagination pagination-sm">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_previous</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_left</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page"> <span
+                                                class="page-link">2</span></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">chevron_right</span></div>
+                                            </span>
+                                        </li>
+                                        <li class="page-item">
+                                            <span class="page-link">
+                                                <div class="icon-box icon-box-xs"><span
+                                                        class="material-symbols-outlined">skip_next</span></div>
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal - Preview Layout -->
+    <div class="modal fade" id="previewLayout" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Preview Layout</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Layout 1</div>
+                    </div>
+                    <div class="inline-items">
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">1024x768 | 16:9</div>
+                            </div>
+                        </div>
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">view_stream</span></div>
+                                <div class="icon-txt">2 regions</div>
+                            </div>
+                        </div>
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">schedule</span></div>
+                                <div class="icon-txt">0 sec</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <!-- Video -->
+                        <video autoplay muted loop class="video-container__video">
+                            <source src="./assets/videos/Osel_Player_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-footer"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Preview Region -->
+    <div class="modal fade" id="previewRegion" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Preview Region</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Info about edit display-->
+                <div class="info-box">
+                    <div class="info-box__header mb-0">
+                        <div class="info-box__title">Region 1</div>
+                    </div>
+                    <div class="inline-items">
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">screenshot_monitor</span>
+                                </div>
+                                <div class="icon-txt">1024x768 | 16:9</div>
+                            </div>
+                        </div>
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">view_stream</span></div>
+                                <div class="icon-txt">2 regions</div>
+                            </div>
+                        </div>
+                        <div class="inline-items__item">
+                            <div class="icon-txt-box icon-txt-box-xs">
+                                <div class="icon-box"><span class="material-symbols-outlined">schedule</span></div>
+                                <div class="icon-txt">0 sec</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <!-- Video -->
+                        <video autoplay muted loop class="video-container__video">
+                            <source src="./assets/videos/Osel_Player_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-footer"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <!-- Custom JS return by us -->
+    <script src="./assets/js/osel.js"></script>
+
+    <!-- Custom Scripts returned by us -->
+    <script>
+
+        $(document).ready(function () {
+
+            let currentStep = 1;
+            const totalSteps = $('.steps .step').length;
+
+            const stepWidth = $('.fn-indicator-ctr .step').width();
+            let progressBarWidth = stepWidth;
+
+            showStep(currentStep);
+            // showStep(3);
+
+            $('.fn-prev-btn').click(function () {
+                currentStep--;
+                console.log(currentStep);
+
+                showStep(currentStep);
+            })
+
+            $('.fn-next-btn').click(function () {
+                currentStep++;
+                console.log(currentStep);
+                showStep(currentStep);
+            });
+
+            $('.fn-submit-btn').click(function () {
+                //
+            });
+
+            // 
+            function showStep(step) {
+                $('.step').removeClass('active');
+
+                for (let i = 1; i <= step; i++) {
+                    $(`#step-indicator-${i}`).addClass('active');
+                }
+
+                $(`#step-content-${step}`).addClass('active');
+
+                $('.fn-prev-btn').toggle(step > 1);
+                $('.fn-next-btn').toggle(step < totalSteps);
+                $('.fn-submit-btn').toggle(step === totalSteps);
+
+                $('.steps__progress-bar').css({
+                    left: `${stepWidth / 2}px`,
+                    width: `${progressBarWidth * (step - 1)}px`
+                })
+            };
+
+            $('.fn-info-toggle-btn').click(function () {
+                $('.fn-info-media').toggle();
+            })
+
+            $('.fn-style-toggle-btn').click(function () {
+                $('.fn-style-media').toggle();
+            })
+        })
+
+        // fn-toggle-info-btn
+        // function showInfo(){
+        //     $()
+        // }
+
+    </script>
+
+</body>
+
+</html>
