@@ -11,6 +11,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
     <link href="./assets/css/osel.css" rel="stylesheet">
 
+    <style>
+        .schedule-chart-panel {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 14px 14px 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .schedule-chart-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .schedule-chart-select {
+            border: none;
+            background: rgba(82, 96, 112, 0.18);
+            color: #1f2a37;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .schedule-chart-select .material-symbols-outlined {
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .schedule-chart-wrap {
+            height: 250px;
+            width: 100%;
+            position: relative;
+            flex: 1;
+        }
+
+        .schedule-chart-wrap canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+
 </head>
 
 <body class="dashboard">
@@ -315,8 +364,8 @@
                         </div>
                     </div>
 
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <div class="col  mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0">
+                    <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                        <div class="col mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0 d-flex flex-column">
                             <div class="title-md mb-2">Top 5 recent displays</div>
 
                             <div class="dashboard-box no-bg">
@@ -422,16 +471,25 @@
                             </div>
 
                         </div>
-                        <div class="col mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0">
+                        <div class="col mb-sm-4 mb-lg-0 mb-xl-0 mb-xll-0 d-flex flex-column">
                             <div class="title-md mb-2">Comparison of schedule count</div>
-                            <div class="dashboard-box equal-height">
-                                <div class="title-xs">Month wise comparison for 2024</div>
+                            <div class="dashboard-box equal-height schedule-chart-panel">
+                                <div class="schedule-chart-head">
+                                    <div class="title-xs">Month wise comparison for 2026</div>
+                                    <button type="button" class="schedule-chart-select">
+                                        <span>This year</span>
+                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                    </button>
+                                </div>
+                                <div class="schedule-chart-wrap">
+                                    <canvas id="scheduleComparisonChart"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="dashboard-box">
+                    <div class="dashboard-box recent-panel">
 
 
                         <div class="title-md mb-2">Recent Activities</div>
@@ -469,6 +527,94 @@
                                     <div class="small">by <a href="#">Kannan</a></div>
                                 </div>
                                 <div class="recent__day">Today</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">playlist_add_check</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Layout approved</div>
+                                    <div class="small">by <a href="#">Anu</a></div>
+                                </div>
+                                <div class="recent__day">2h ago</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">group</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">User role updated</div>
+                                    <div class="small">by <a href="#">Ravi</a></div>
+                                </div>
+                                <div class="recent__day">Yesterday</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">bar_chart</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Report generated</div>
+                                    <div class="small">by <a href="#">Meena</a></div>
+                                </div>
+                                <div class="recent__day">Yesterday</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">update</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Display updated</div>
+                                    <div class="small">by <a href="#">Sathish</a></div>
+                                </div>
+                                <div class="recent__day">2 days ago</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">folder_open</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Media folder shared</div>
+                                    <div class="small">by <a href="#">Priya</a></div>
+                                </div>
+                                <div class="recent__day">3 days ago</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">check_circle</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Schedule approved</div>
+                                    <div class="small">by <a href="#">Vinod</a></div>
+                                </div>
+                                <div class="recent__day">4 days ago</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">upload_file</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">New media uploaded</div>
+                                    <div class="small">by <a href="#">Deepa</a></div>
+                                </div>
+                                <div class="recent__day">Last week</div>
+                            </div>
+
+                            <div class="recent">
+                                <div class="recent__icon">
+                                    <span class="material-symbols-outlined">notifications_active</span>
+                                </div>
+                                <div class="recent__txt">
+                                    <div class="title-xs">Alert configured</div>
+                                    <div class="small">by <a href="#">Asha</a></div>
+                                </div>
+                                <div class="recent__day">Last week</div>
                             </div>
 
                             <!-- 
@@ -711,6 +857,96 @@
                     }
                 }
             });
+
+            if (document.getElementById('scheduleComparisonChart')) {
+                const scheduleCtx = document.getElementById('scheduleComparisonChart').getContext('2d');
+                new Chart(scheduleCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            data: [8, 10, 12, 15, 11, 17, 15, 14, 16, 18, 13, 12],
+                            borderColor: '#f3a10a',
+                            backgroundColor: 'rgba(243, 161, 10, 0.08)',
+                            borderWidth: 2.5,
+                            pointBackgroundColor: '#f3a10a',
+                            pointBorderColor: '#f3a10a',
+                            pointRadius: 5,
+                            pointHoverRadius: 6,
+                            tension: 0.12,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'nearest',
+                            intersect: false
+                        },
+                        layout: {
+                            padding: {
+                                top: 4,
+                                right: 10,
+                                bottom: 0,
+                                left: 6
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: 'rgba(25, 30, 36, 0.08)',
+                                    drawBorder: false
+                                },
+                                border: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: '#586673',
+                                    font: {
+                                        size: 11
+                                    }
+                                }
+                            },
+                            y: {
+                                min: 0,
+                                max: 20,
+                                ticks: {
+                                    stepSize: 2,
+                                    color: '#586673',
+                                    font: {
+                                        size: 11
+                                    }
+                                },
+                                grid: {
+                                    color: 'rgba(25, 30, 36, 0.08)',
+                                    drawBorder: false
+                                },
+                                border: {
+                                    display: false
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Schedule Count',
+                                    color: '#586673',
+                                    font: {
+                                        size: 11,
+                                        weight: '600'
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                enabled: true
+                            }
+                        }
+                    }
+                });
+            }
         });
     </script>
 
